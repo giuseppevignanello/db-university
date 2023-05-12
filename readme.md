@@ -69,6 +69,7 @@ SHOW databases;
 USE `db_university`;
 SHOW tables;
 DESCRIBE `teachers`
-SELECT \*
+SELECT COUNT(\*)
+AS numberOfTeacherWithoutPhone
 FROM `teachers`
 WHERE `phone` IS NULL;
